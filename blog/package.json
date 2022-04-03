@@ -22,7 +22,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "rebass": "^3.0.0-12"
+    "rebass": "^3.0.0-12",
+    "styled-icons": "^10.45.0"
   },
   "devDependencies": {
     "netlify-cli": "^9.12.3",
