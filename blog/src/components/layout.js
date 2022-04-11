@@ -27,18 +27,17 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-      <ThemeProvider theme={Gray}>
-      <GlobalStyle/>
+ return (
+    <ThemeProvider theme={Gray}>
+    <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title || `Title`} />
       <Content>
-        <Main>{children}</Main>
-        <Footer
-        style={{marginTop:  `2rem`, }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </Footer>
+        <main m={20}>{children}</main>
+        <Footer>
+            {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </Footer>
       </Content>
     </ThemeProvider>
   )
